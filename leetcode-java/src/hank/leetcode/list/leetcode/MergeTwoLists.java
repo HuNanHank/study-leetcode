@@ -17,6 +17,17 @@ package hank.leetcode.list.leetcode;
  */
 public class MergeTwoLists {
 
+    public static void main(String[] args) {
+        int[] nums1 = {1, 2, 4};
+        int[] nums2 = {1, 3, 4};
+        ListNode list1 = new ListNode();
+        list1.createList(nums1);
+        ListNode list2 = new ListNode();
+        list2.createList(nums2);
+        ListNode resultList = new MergeTwoLists().mergeTwoLists(list1, list2);
+        System.out.println(resultList);
+    }
+
     /**
      * 递归方式合并链表。（有待思考）
      *
@@ -37,7 +48,6 @@ public class MergeTwoLists {
             return list2;
         }
     }
-
 
     /**
      * 遍历两个链表比较节点大小，从小到大依次连接起来。
@@ -61,16 +71,5 @@ public class MergeTwoLists {
         }
         pointerNode.next = (list1 == null) ? list2 : list1;
         return resultList.next;
-    }
-
-    public static void main(String[] args) {
-        int[] nums1 = new int[]{1, 2, 4};
-        int[] nums2 = new int[]{1, 3, 4};
-        ListNode list1 = new ListNode();
-        list1.createList(nums1);
-        ListNode list2 = new ListNode();
-        list2.createList(nums2);
-        ListNode resultList = new MergeTwoLists().mergeTwoLists(list1, list2);
-        System.out.println(resultList);
     }
 }

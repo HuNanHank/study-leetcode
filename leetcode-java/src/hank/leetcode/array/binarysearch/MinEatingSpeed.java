@@ -42,7 +42,7 @@ public class MinEatingSpeed {
     }
 
     public static void main(String[] args) {
-        int[] piles = new int[]{3, 6, 7, 11};
+        int[] piles = {3, 6, 7, 11};
         int h = 8;
         System.out.println(new MinEatingSpeed().minEatingSpeed(piles, h));
     }

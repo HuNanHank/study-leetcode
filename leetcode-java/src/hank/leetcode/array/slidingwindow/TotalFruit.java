@@ -9,6 +9,11 @@ import java.util.Map;
  * @author hank
  */
 public class TotalFruit {
+
+    public static void main(String[] args) {
+        int[] fruits = {1, 2, 1};
+        System.out.println(new TotalFruit().totalFruit(fruits));
+    }
     public int totalFruit(int[] fruits) {
         int left = 0;
         int right = 0;

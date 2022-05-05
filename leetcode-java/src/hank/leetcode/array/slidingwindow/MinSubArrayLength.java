@@ -14,7 +14,7 @@ package hank.leetcode.array.slidingwindow;
  */
 public class MinSubArrayLength {
     public static void main(String[] args) {
-        int[] nums = new int[]{2, 3, 1, 2, 4, 3};
+        int[] nums = {2, 3, 1, 2, 4, 3};
         int target = 7;
         System.out.println(new MinSubArrayLength().minSubArrayLen(target, nums));
     }

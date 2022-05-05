@@ -20,11 +20,7 @@ import java.util.Arrays;
  */
 public class CorpFlightBookings {
     public static void main(String[] args) {
-        int[][] bookings = new int[][]{
-                {1, 2, 10},
-                {2, 3, 20},
-                {2, 5, 25}
-        };
+        int[][] bookings = {{1, 2, 10}, {2, 3, 20}, {2, 5, 25}};
         int n = 5;
         System.out.println(Arrays.toString(new CorpFlightBookings().corpFlightBookings2(bookings, n)));
     }

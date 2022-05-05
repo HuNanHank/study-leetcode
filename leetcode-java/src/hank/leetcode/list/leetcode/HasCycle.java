@@ -16,6 +16,16 @@ package hank.leetcode.list.leetcode;
  */
 public class HasCycle {
 
+    public static void main(String[] args) {
+        ListNode list = new ListNode(3);
+        list.insertTail(2);
+        list.insertTail(0);
+        list.insertTail(-4);
+        System.out.println(list);
+        list.next.next.next = list.next;
+        System.out.println(new HasCycle().hasCycle(list));
+    }
+
     /**
      * Floyd判圈算法：使用两个指针slow、fast，其中slow每次移动一个节点，fast每次移动两个节点。
      * 若有环则slow最终会和fast相交于同一个节点。
@@ -37,15 +47,5 @@ public class HasCycle {
             }
         }
         return false;
-    }
-
-    public static void main(String[] args) {
-        ListNode list = new ListNode(3);
-        list.insertTail(2);
-        list.insertTail(0);
-        list.insertTail(-4);
-        System.out.println(list);
-        list.next.next.next = list.next;
-        System.out.println(new HasCycle().hasCycle(list));
     }
 }

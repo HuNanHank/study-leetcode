@@ -16,7 +16,7 @@ package hank.leetcode.array;
  */
 public class SubarraySum {
     public static void main(String[] args) {
-        int[] nums = new int[]{1, 1, 1};
+        int[] nums = {1, 1, 1};
         int k = 2;
         System.out.println(new SubarraySum().subarraySum(nums, k));
     }

@@ -17,6 +17,11 @@ public class ListNode {
         this.next = null;
     }
 
+    ListNode(int val, ListNode next){
+        this.val = val;
+        this.next = next;
+    }
+
     /**
      * 向链表的尾部插入数据。
      *
